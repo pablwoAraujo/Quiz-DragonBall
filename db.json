@@ -1,0 +1,18 @@
+{
+    "bg":"https://images6.alphacoders.com/680/thumb-1920-680642.png",
+    "title": "Quiz Dragon Ball",
+    "description": "Teste os seus conhecimentos a respeito de Dragon Ball",
+    "questions": [],
+    "external": [],
+    "theme": {
+        "colors": {
+            "primary":"#ff9800",
+            "secondary":"#ffc400",
+            "mainBg":"#2196f3",
+            "contrastText":"#FFFFFF",
+            "wrong":"",
+            "sucess":""
+        },
+        "borderRadius": "4px"
+    }
+}
