@@ -2,7 +2,44 @@
     "bg":"https://images6.alphacoders.com/680/thumb-1920-680642.png",
     "title": "Quiz Dragon Ball",
     "description": "Teste os seus conhecimentos a respeito de Dragon Ball",
-    "questions": [],
+    "questions": [
+        {
+          "image": "https://i.pinimg.com/originals/29/8e/29/298e2993d4b3e212a337bcd5a6143f7e.gif",
+          "title": "Quem foi o primeiro mestre do Goku?",
+          "description": "Essa é pra aquecer",
+          "answer": 0,
+          "alternatives": [
+            "Son Gohan",
+            "Muten Roshi",
+            "Mestre Kame",
+            "Mestre Mutaito"
+          ]
+        },
+        {
+          "image": "https://media1.tenor.com/images/bf4cca58514197f13d8a1cbbf4959a0e/tenor.gif?itemid=11577624",
+          "title": "Quem deu a nuvem voadora (kintoun) para o Goku?",
+          "description": "Essa também está fácil!",
+          "answer": 3,
+          "alternatives": [
+            "Bulma",
+            "Son Gohan",
+            "Senhor Kaio",
+            "Mestre Kame"
+          ]
+        },
+        {
+          "image": "https://pa1.narvii.com/6329/fc67437efe8218ecdfccda7c19051e528340fec5_hq.gif",
+          "title": "Qual o nome da irmã do mestre kame?",
+          "description": "Essa é nível médio",
+          "answer": 3,
+          "alternatives": [
+            "Bulma",
+            "Uranai",
+            "Lunch",
+            "Chi-Chi"
+          ]
+        }
+      ],
     "external": [],
     "theme": {
         "colors": {
@@ -10,8 +47,9 @@
             "secondary":"#ffc400",
             "mainBg":"#2196f3",
             "contrastText":"#FFFFFF",
-            "wrong":"",
-            "sucess":""
+            "wrong":"#f44336",
+            "sucess":"#00e676",
+            "black": "#000000"
         },
         "borderRadius": "4px"
     }
