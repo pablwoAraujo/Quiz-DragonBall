@@ -64,8 +64,15 @@ Widget.Topic = styled.a`
   }
 `;
 
-Widget.Topic.Active = styled.a`
-    background-color: ${({ theme }) => `${theme.colors.primary}`};
+Widget.Loading = styled.div`
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  
+  * {
+    padding: 0;
+    margin: 0;
+  }
 `;
 
 export default Widget;

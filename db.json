@@ -31,7 +31,7 @@
           "image": "https://pa1.narvii.com/6329/fc67437efe8218ecdfccda7c19051e528340fec5_hq.gif",
           "title": "Qual o nome da irmã do mestre kame?",
           "description": "Essa é nível médio",
-          "answer": 3,
+          "answer": 1,
           "alternatives": [
             "Bulma",
             "Uranai",
@@ -48,8 +48,7 @@
             "mainBg":"#2196f3",
             "contrastText":"#FFFFFF",
             "wrong":"#f44336",
-            "sucess":"#00e676",
-            "black": "#000000"
+            "success":"#00e676"
         },
         "borderRadius": "4px"
     }
