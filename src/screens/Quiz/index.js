@@ -1,5 +1,7 @@
 /* eslint-disable react/prop-types */
 import React from 'react';
+import Lottie from 'react-lottie';
+import { motion } from 'framer-motion';
 import Button from '../../components/Button';
 import Widget from '../../components/Widget';
 import QuizLogo from '../../components/QuizLogo';
@@ -7,10 +9,23 @@ import QuizBackground from '../../components/QuizBackground';
 import QuizContainer from '../../components/QuizContainer';
 import AlternativesForm from '../../components/AlternativesForm';
 import BackLinkArrow from '../../components/BackLinkArrow';
+import animationData from '../../animations/loading.json';
 
 function ResultWidget({ results }) {
   return (
-    <Widget>
+    <Widget
+      as={motion.section}
+      transition={{
+        delay: 0.5,
+        duration: 0.5,
+      }}
+      variants={{
+        show: { opacity: 1, y: '0' },
+        hidden: { opacity: 0, y: '100%' },
+      }}
+      initial="hidden"
+      animate="show"
+    >
       <Widget.Header>
         <BackLinkArrow href="/" />
         Tela de Resultado:
@@ -18,47 +33,41 @@ function ResultWidget({ results }) {
 
       <Widget.Content>
         <p>
-          Você acertou
-          {' '}
+          {'Você acertou '}
           {results.filter((x) => x).length}
-          {' '}
-          perguntas
+          {` de ${results.length} perguntas`}
         </p>
-        <ul>
+        <AlternativesForm>
           {results.map((result, index) => (
-            <li key={`result__${index + 1}`}>
-              <p>
-                #Questão:
-                {index + 1}
-                {' - '}
-                {result === true ? 'Acertou' : 'Errou'}
-              </p>
-            </li>
+            <Widget.Topic
+              as="label"
+              key={`result__${index + 1}`}
+              data-status={result ? 'SUCCESS' : 'ERROR'}
+              data-selected
+            >
+              {`#Questão: ${index + 1} - ${result === true ? 'Acertou' : 'Errou'}`}
+            </Widget.Topic>
           ))}
-        </ul>
+        </AlternativesForm>
       </Widget.Content>
     </Widget>
   );
 }
 
+const defaultOptions = {
+  loop: true,
+  autoplay: true.valueOf,
+  animationData,
+  rendererSettings: {
+    preserveAspectRatio: 'xMidYMid slice',
+  },
+};
+
 function LoadingWidget() {
   return (
-    <Widget>
-      <Widget.Loading>
-        <img
-          alt="loading"
-          style={{
-            width: '100%',
-            height: '100%',
-          }}
-          src="https://steamuserimages-a.akamaihd.net/ugc/279604015237668126/359096884936B108F7D0E3B71A98CD16ADAC6652/"
-        />
-      </Widget.Loading>
-
-      <Widget.Content>
-        Carregando...
-      </Widget.Content>
-    </Widget>
+    <Lottie
+      options={defaultOptions}
+    />
   );
 }
 
@@ -181,7 +190,10 @@ export default function QuizPage({ externalQuestions, externalBg }) {
     if (nextQuestion < totalQuestions) {
       setCurrentQuestion(nextQuestion);
     } else {
-      setScreenState(screenStates.RESULT);
+      setScreenState(screenStates.LOADING);
+      setTimeout(() => {
+        setScreenState(screenStates.RESULT);
+      }, 2 * 1000);
     }
   }
 
