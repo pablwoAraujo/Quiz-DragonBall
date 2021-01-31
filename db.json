@@ -40,7 +40,10 @@
           ]
         }
       ],
-    "external": [],
+    "external": [
+      "https://narutoquiz-base.vitor-kb.vercel.app/",
+      "https://naruto-quiz.llofyy.vercel.app/"
+    ],
     "theme": {
         "colors": {
             "primary":"#ff9800",
