@@ -4,9 +4,9 @@
     "description": "Teste os seus conhecimentos a respeito de Dragon Ball",
     "questions": [
         {
-          "image": "https://i.pinimg.com/originals/29/8e/29/298e2993d4b3e212a337bcd5a6143f7e.gif",
+          "image": "https://pa1.narvii.com/6617/caf2e34dbcc854d640f1fd554a7310be3532fdf3_hq.gif",
           "title": "Quem foi o primeiro mestre do Goku?",
-          "description": "Essa é pra aquecer",
+          "description": "",
           "answer": 0,
           "alternatives": [
             "Son Gohan",
@@ -16,9 +16,9 @@
           ]
         },
         {
-          "image": "https://media1.tenor.com/images/bf4cca58514197f13d8a1cbbf4959a0e/tenor.gif?itemid=11577624",
-          "title": "Quem deu a nuvem voadora (kintoun) para o Goku?",
-          "description": "Essa também está fácil!",
+          "image": "https://i.pinimg.com/originals/6d/d2/23/6dd223a6002c08cd38d01a1ebe71c0d5.gif",
+          "title": "Quem deu a nuvem voadora para o Goku?",
+          "description": "",
           "answer": 3,
           "alternatives": [
             "Bulma",
@@ -30,13 +30,97 @@
         {
           "image": "https://pa1.narvii.com/6329/fc67437efe8218ecdfccda7c19051e528340fec5_hq.gif",
           "title": "Qual o nome da irmã do mestre kame?",
-          "description": "Essa é nível médio",
+          "description": "",
           "answer": 1,
           "alternatives": [
             "Bulma",
             "Uranai",
             "Lunch",
             "Chi-Chi"
+          ]
+        },
+        {
+          "image": "https://media.tenor.com/images/2a8153f07f96f664e45f54513a605447/tenor.gif",
+          "title": "Quem ensinou o Goku a usar a Genki Dama?",
+          "description": "",
+          "answer": 2,
+          "alternatives": [
+            "Mestre Kame",
+            "Mestre Karin",
+            "Sr. Kaioh",
+            "Kami-Sama"
+          ]
+        },
+        {
+          "image": "https://pa1.narvii.com/7401/203fb7991cd4af4c5c0aa0c4a18bcc9bea2a5086r1-500-375_00.gif",
+          "title": "Qual o nome da personagem feminina que tem dupla personalidade?",
+          "description": "",
+          "answer": 3,
+          "alternatives": [
+            "Bulma",
+            "Chi-Chi",
+            "Uranai",
+            "Lunch"
+          ]
+        },
+        {
+          "image": "https://rh-dbzrpg.weebly.com/uploads/2/5/5/9/25591790/7030293_orig.gif",
+          "title": "Quem matou Kuririn pela primeira vez?",
+          "description": "",
+          "answer": 1,
+          "alternatives": [
+            "Freeza",
+            "Tamborine",
+            "Piccolo Daimaoh",
+            "Tenshinhan"
+          ]
+        },
+        {
+          "image": "https://qph.fs.quoracdn.net/main-qimg-4655d0033f986a2b271ee21e01a9a7a5",
+          "title": "Quem venceu o primeiro torneio de artes marciais do qual o Goku participou?",
+          "description": "",
+          "answer": 3,
+          "alternatives": [
+            "Mestre Kame",
+            "Goku",
+            "Tenshinhan",
+            "Jackie Chun"
+          ]
+        },
+        {
+          "image": "https://pa1.narvii.com/6752/00a4e7689de256f4c3fcaa92d0a98a696ba17d48_hq.gif",
+          "title": "Há quantas esferas do dragão em Dragon Ball?",
+          "description": "",
+          "answer": 0,
+          "alternatives": [
+            "7",
+            "6",
+            "12",
+            "5"
+          ]
+        },
+        {
+          "image": "https://pa1.narvii.com/6306/cf32c66d5f14d216abd2b9ae96483c82a1efcca2_hq.gif",
+          "title": "Quantas estrelas tem a esfera que o avô de Goku o deixou?",
+          "description": "",
+          "answer": 2,
+          "alternatives": [
+            "1",
+            "7",
+            "4",
+            "5"
+          ]
+        },
+        {
+          "image": "https://64.media.tumblr.com/eddbb90c7b2fd54f1a6365f2771f38cb/tumblr_mnblkxuLCA1r91cn2o1_500.gif",
+          "title": "Como é chamada a transformação dos sayajins em macaco gigante?",
+          "description": "",
+          "answer": 0,
+          "alternatives": [
+            "Oozaru",
+            "Macacão",
+            "Super macaco",
+            "Super Sayajin"
           ]
         }
       ],
